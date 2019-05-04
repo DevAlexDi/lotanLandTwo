@@ -1,0 +1,96 @@
+@import "layout/var";
+
+.header {
+
+    @media (max-width: 991px){
+        position: relative;
+    }
+   
+    &__top {
+        padding: 11px 0;
+        background: #baa69b;
+    }
+
+    &__mid {
+        padding: 35px 0;
+    }
+
+    &__bott {
+        @media (max-width: 991px){
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(195,173,161, 0.97);
+            z-index: 50;
+            padding: 85px 42px 80px;
+        }
+
+        @media (max-width: 767px){
+            padding: 30px 15px 30px;
+        }
+    }
+
+    &__sm-soc {
+        @media (max-width: 991px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__close-menu {
+        @media (max-width: 991px){
+            display: block;
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            left: -6px;
+        }
+
+        &:before {
+            @media (max-width: 991px){
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%) rotate(45deg);
+                transform-origin: center;
+                height: 100%;
+                width: 4px;
+                background: #fff;
+            }
+        }
+
+        &:after {
+            @media (max-width: 991px){
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+                transform-origin: center;
+                height: 4px;
+                width: 100%;
+                background: #fff;
+            }
+        }
+    }
+
+    &__sm-top-menu {
+        @media (max-width: 991px){
+            margin-bottom: 100px;
+        }
+
+        @media (max-width: 767px){
+            margin-bottom: 40px;
+        }
+    }
+}

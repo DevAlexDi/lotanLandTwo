@@ -1,0 +1,27 @@
+@import "layout/var";
+@import "layout/app";
+//header
+@import "components/header/header";
+@import "components/header/headTopMenu";
+@import "components/header/headerMid";
+@import "components/header/cube";
+@import "components/header/headerSocials";
+@import "components/header/headerBottMenu";
+@import "components/header/firstMenuList";
+@import "components/header/secondMenuList";
+@import "components/header/smButtMenu";
+//baner
+@import "components/baner/baner";
+@import "components/baner/slide1";
+@import "components/baner/buttWr";
+//article
+@import "components/article/article";
+//slider two
+@import "components/slidertwo/sliderTwo";
+//best product
+@import "components/bestproduct/bestProduct";
+//footer
+@import "components/footer/footer";
+@import "components/footer/footerTop";
+@import "components/footer/footerBot";
+@import "components/footer/menuList";

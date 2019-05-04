@@ -1,0 +1,48 @@
+@import "layout/var";
+
+.first-menu-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 991px){
+        display: block;
+    }
+
+    &__item {
+        @media (max-width: 991px){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__line {
+        margin: 0 auto;
+        height: 16px;
+        width: 1px;
+        background: $green;
+        flex-shrink: 0;
+
+        @media (max-width: 991px){
+            display: none;
+        }
+    }
+
+    &__link {
+        color: $green;
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        @media (max-width: 991px){
+            font-size: 21px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        @media (max-width: 767px){
+            font-size: 16px;
+        }
+    }
+}

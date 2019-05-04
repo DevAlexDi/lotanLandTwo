@@ -1,0 +1,204 @@
+@import "layout/var";
+
+.slider-two {
+   
+    &__slide {
+        outline: none;
+        height: 434px;
+        background-size: cover;
+        background-position: center;
+
+        &--slide-one {
+            @media (max-width: 991px){
+                background-position: center left -284px;
+            }
+
+            @media (max-width: 767px){
+                background-position: center;
+            }
+        }
+    }
+
+    &__slide-1-content {
+        padding-top: 90px;
+        display: flex;
+
+        @media (max-width: 991px){
+            padding-left: 106px;
+        }
+
+        @media (max-width: 767px){
+            padding-left: 0;
+            display: block;
+            padding-top: 40px;
+        }
+    }
+
+    &__slide-1-text-sm {
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: right;
+
+        @media (max-width: 767px){
+            text-align: center;
+        }
+    }
+
+    &__slide-1-text-big {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 40px;
+        text-align: right;
+        font-weight: $b;
+
+        @media (max-width: 767px){
+            text-align: center;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: calc(50% - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        padding: 0;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        transform-origin: center;
+        background: transparent;
+        outline: none;
+        transform: rotate(45deg) translateY(-50%);
+        z-index: 15;
+        font-size: 0;
+
+        @media (max-width: 1300px){
+            top: 50%;
+        }
+
+        @media (max-width: 1199px){
+            top: calc(50% - 80px);
+        }
+
+        @media (max-width: 1100px){
+            top: 50%;
+        }
+
+        @media (max-width: 991px){
+            top: calc(50% - 80px);
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            background-image: url(../img/arr-right-white.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 22px;
+            height: 19px;
+            position: relative;
+            transform-origin: center;
+            transform: rotate(-45deg);
+        }
+
+        &.slick-prev {
+            left: 120px;
+
+            @media (max-width: 1600px){
+                left: 0px;
+            }
+
+            @media (max-width: 991px){
+                left: 20px;
+            }
+
+            &:before {
+                transform: rotate(135deg);
+            }
+        }
+
+        &.slick-next {
+            right: 147px;
+
+            @media (max-width: 1600px){
+                right: 27px;
+            }
+
+            @media (max-width: 991px){
+                right: 47px;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1140px;
+        display: flex!important;
+        z-index: 10;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 1199px){
+            width: 940px;
+        }
+
+        @media (max-width: 991px){
+            width: auto;
+        }
+
+        li {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            transform-origin: center;
+            transform: rotate(45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+
+            button {
+                font-size: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                background: transparent;
+                position: relative;
+                padding: 0;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    background: #d7d7d7;
+                    border-radius: 3px; 
+                }
+            }
+
+            &.slick-active {
+                button {
+                    border-color: #c8b8b0;
+                    &:before {
+                        width: 17px;
+                        height: 17px;
+                        background: $green;
+                    }
+                }
+            }
+        }
+    }
+}

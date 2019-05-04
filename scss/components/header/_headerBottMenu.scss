@@ -1,0 +1,29 @@
+@import "layout/var";
+
+.header-bott-menu {
+
+    @media (max-width: 991px){
+        display: flex;
+    }
+    &__first-menu {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(25, 170, 134, 0.2);
+
+        @media (max-width: 991px){
+            padding-bottom: 0;
+            width: 50%;
+        }
+    }
+
+    &__second-menu {
+        @media (max-width: 991px){
+            width: 50%;
+        } 
+    }
+
+    .container {
+        @media (max-width: 991px){
+            width: 100%;
+        }
+    }
+}

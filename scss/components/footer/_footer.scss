@@ -1,0 +1,24 @@
+@import "layout/var";
+
+.footer {
+    
+    &__top-wr {
+        background: #faf9fe;
+        padding: 35px 0;
+        border-top: 1px solid #cde9e6;
+        border-bottom: 1px solid #cde9e6;
+    }
+
+    &__mid-wr {
+        padding: 40px 0;
+
+        @media (max-width: 991px){
+            padding: 22px 0;
+        }
+    }
+
+    &__bott-wr {
+        background: #baa69b;
+        padding: 15px 0;
+    }
+}

@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.butt-wr {
+    display: flex;
+
+    &__butt {
+        display: block;
+        padding: 18px 21px;
+        min-width: 272px;
+        text-align: center;
+        background: $green;
+        font-size: 14px;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        border-right: 11px solid #c8b8b0;
+        outline: none;
+        transition: border-color 0.3s, background-color 0.3s;
+    }
+}

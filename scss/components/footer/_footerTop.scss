@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 991px){
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__item {
+        display: block;
+        margin-left: 100px;
+        font-size: 14px;
+        color: $green;
+
+        @media (max-width: 1199px){
+            margin-left: 30px;
+        }
+
+        @media (max-width: 991px){
+            margin-left: 0;
+        }
+
+        @media (max-width: 767px){
+            text-align: right;
+            padding-left: 5px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+
+        }
+    }
+}
