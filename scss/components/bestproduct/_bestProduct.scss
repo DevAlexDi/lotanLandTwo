@@ -125,6 +125,11 @@
         font-size: 17px;
         color: #444444;
         text-transform: uppercase;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #baa69b;
+        }
     }
 
     &--more-margin {

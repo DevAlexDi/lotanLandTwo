@@ -23,6 +23,11 @@
         height: 26px;
         background: #19aa86;
         border-radius: 50%;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #ab9485;
+        }
 
         @media (max-width: 991px){
             background: #19aa86;
@@ -66,10 +71,22 @@
         
         .header-socials__link {
             background: #fff;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $green;
+
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
 
             svg {
                 path {
                     fill: #baa69b;
+                    transition: fill 0.3s;
                 }
             }
         }

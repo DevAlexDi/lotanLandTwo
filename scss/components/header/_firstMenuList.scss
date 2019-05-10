@@ -34,6 +34,11 @@
         display: block;
         text-transform: uppercase;
         font-size: 14px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #ab9485;
+        }
 
         @media (max-width: 991px){
             font-size: 21px;

@@ -17,5 +17,9 @@
         border-right: 11px solid #c8b8b0;
         outline: none;
         transition: border-color 0.3s, background-color 0.3s;
+
+        &:hover {
+            background-color: #ab9485;
+        }
     }
 }
